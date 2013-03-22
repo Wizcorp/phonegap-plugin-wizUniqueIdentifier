@@ -5,7 +5,7 @@ correct location relative to this example's www directory.  So we must copy or
 link the plugin javascript code to the www directory.
 
 Currently, the XCode project performs the copy method (described below) as part
-of it's build process.
+of its build process.
 
 Copy Method:
 	mkdir -p ./www/phonegap

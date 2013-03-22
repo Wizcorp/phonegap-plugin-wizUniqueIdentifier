@@ -1,9 +1,9 @@
 
 # PLUGIN: 
 
-phonegap-plugin-wizUniqueIdentifier<br />
-version : 1.9<br />
-last update : 21/03/2013<br />
+phonegap-plugin-wizUniqueIdentifier  
+version : 1.9  
+last update : 21/03/2013  
 
 
 # CHANGELOG: 
@@ -25,7 +25,7 @@ previously stored value.
 
 # INSTALL (iOS): #
 
-Project tree<br />
+Project tree  
 
 <pre><code>
 www
@@ -48,10 +48,10 @@ www
 
 2 ) Add the framework "Security.framework"
 
-3 ) Add to Cordova.plist in the plugins array:<br />
-- Key : wizUniqueIdentifier<br />
-- Type : String<br />
-- Value : wizUniqueIdentifier<br />
+3 ) Add to Cordova.plist in the plugins array:   
+- Key : wizUniqueIdentifier   
+- Type : String   
+- Value : wizUniqueIdentifier   
 
 4 ) Add \<script\> tag to your index.html<br />
 - \<script type="text/javascript" charset="utf-8"
