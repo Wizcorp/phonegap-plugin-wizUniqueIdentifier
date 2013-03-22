@@ -1,0 +1,4 @@
+.DS_Store
+example/www/phonegap/*
+example/ios/exampleWizUniqueIdentifier.xcodeproj/xcuserdata/*
+example/ios/exampleWizUniqueIdentifier.xcodeproj/project.xcworkspace/*
