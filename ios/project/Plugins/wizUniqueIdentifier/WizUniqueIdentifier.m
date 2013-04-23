@@ -10,10 +10,8 @@
 
 @implementation WizUniqueIdentifier
 
--(void)get:(NSMutableArray *)arguments withDict:(NSMutableDictionary *)options
+-(void)get:(CDVInvokedUrlCommand*)command
 {
-    NSString *callbackId = [arguments objectAtIndex:0];
-    
     // Read the unique identifier from the keychain.
     KeychainItemWrapper *wrapper = [[KeychainItemWrapper alloc] initWithIdentifier:@"WizUniqueIdentifier" accessGroup:nil];
     NSString *uniqueId = [wrapper objectForKey:kSecAttrAccount];
@@ -30,7 +28,7 @@
 
     // Return the result
     CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:uniqueId];
-    [self writeJavascript: [pluginResult toSuccessCallbackString:callbackId]];
+    [self writeJavascript: [pluginResult toSuccessCallbackString:command.callbackId]];
 }
 
 @end
