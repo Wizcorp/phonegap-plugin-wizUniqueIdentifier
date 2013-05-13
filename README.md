@@ -2,11 +2,12 @@
 # PLUGIN: 
 
 phonegap-plugin-wizUniqueIdentifier  
-version : 2.4
+version : 2.5
 last update : 13/05/2013  
 
 
 # CHANGELOG: 
+- Updated to Cordova 2.5
 - Updated to Cordova 2.4
 - Updated to Cordova 2.3
 - Initial version.
