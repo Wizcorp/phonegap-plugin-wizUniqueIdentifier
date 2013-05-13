@@ -45,6 +45,7 @@
 		F66522B817252A7A00FFB8F1 /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = F66522B517252A7A00FFB8F1 /* KeychainItemWrapper.m */; };
 		F66522B917252A7A00FFB8F1 /* WizUniqueIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = F66522B717252A7A00FFB8F1 /* WizUniqueIdentifier.m */; };
 		F66522C517252EFA00FFB8F1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F66522C417252EFA00FFB8F1 /* Security.framework */; };
+		F677C27B17409FD300A2BCD7 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F677C27A17409FD300A2BCD7 /* AssetsLibrary.framework */; };
 		F840E1F1165FE0F500CFE078 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = F840E1F0165FE0F500CFE078 /* config.xml */; };
 /* End PBXBuildFile section */
 
@@ -111,6 +112,7 @@
 		F66522B617252A7A00FFB8F1 /* WizUniqueIdentifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WizUniqueIdentifier.h; sourceTree = "<group>"; };
 		F66522B717252A7A00FFB8F1 /* WizUniqueIdentifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WizUniqueIdentifier.m; sourceTree = "<group>"; };
 		F66522C417252EFA00FFB8F1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F677C27A17409FD300A2BCD7 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = exampleWizUniqueIdentifier/config.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,6 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F677C27B17409FD300A2BCD7 /* AssetsLibrary.framework in Frameworks */,
 				F66522C517252EFA00FFB8F1 /* Security.framework in Frameworks */,
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
@@ -223,6 +226,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F677C27A17409FD300A2BCD7 /* AssetsLibrary.framework */,
 				F66522C417252EFA00FFB8F1 /* Security.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
