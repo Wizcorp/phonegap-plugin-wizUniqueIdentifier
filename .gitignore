@@ -5,10 +5,9 @@ example/ios/exampleWizUniqueIdentifier.xcodeproj/xcuserdata/*
 example/ios/exampleWizUniqueIdentifier.xcodeproj/project.xcworkspace/*
 example/ios/CordovaLib/CordovaLib.xcodeproj/xcuserdata/*
 example/ios/www/*
-!example/ios/www/cordova-2.3.0.js
+!example/ios/www/cordova-2.7.0.js
 example/ios/CordovaLib/CordovaLib.xcodeproj/xcuserdata/*
 example/ios/www/*
-!example/ios/www/cordova-2.3.0.js
 
 # Jet Brains
 .idea/
@@ -24,3 +23,5 @@ bin/
 .classpath
 .project
 out/
+
+

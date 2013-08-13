@@ -1,7 +1,6 @@
 
 #phonegap-plugin-wizUniqueIdentifier 
 
- 
 phonegap version : 2.7  
 last update : 13/08/2013  
 
