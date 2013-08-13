@@ -1,48 +1,47 @@
 
-# PLUGIN: 
+#phonegap-plugin-wizUniqueIdentifier 
 
-phonegap-plugin-wizUniqueIdentifier  
-version : 2.3  
-last update : 22/04/2013  
+ 
+phonegap version : 2.7  
+last update : 13/08/2013  
 
-
-# CHANGELOG: 
-- Initial version.
-
-
-# KNOWN ISSUES:
-- Updated to Cordova 2.3
+# Known Issues:
+n/a
 
 
-# DESCRIPTION :
+# Description
 
 PhoneGap plugin for generating a unique identifier and storing it in the device
-keychain.  The unique identifier is stored in the device persistently and preserved
+keychain.  
+
+For iOS - The unique identifier is stored in the device persistently and preserved
 across device restarts and app re-installs.  Resetting the device content and settings
-willl reset the value, however restoring the device from a backup will restore any
+will reset the value, however restoring the device from a backup will restore any
 previously stored value.
 
+For Android - The unique identifier is stored in the device shared prefs and preserved
+for the lifetime of the app on the device.
 
-# INSTALL (iOS): #
+
+# Install (iOS)
 
 Project tree  
 
-<pre><code>
-www
-    / phonegap
-        / plugin
-            / wizUniqueIdentifier
-                / wizUniqueIdentifier.js
- ios
-    / project
-        / Plugins
-            / WizUniqueIdentifier
-                / WizUniqueIdentifier.h
-                / WizUniqueIdentifier.m
-                / KeychainItemWrapper.h
-                / KeychainItemWrapper.m
+	www
+    	/ phonegap
+        	/ plugin
+            	/ wizUniqueIdentifier
+                	/ wizUniqueIdentifier.js
+ 	ios
+    	/ project
+        	/ Plugins
+            	/ WizUniqueIdentifier
+                	/ WizUniqueIdentifier.h
+                	/ WizUniqueIdentifier.m
+                	/ KeychainItemWrapper.h
+                	/ KeychainItemWrapper.m
 
-</code></pre>
+
 
 1 ) Arrange files to structure seen above.
 
@@ -51,23 +50,51 @@ www
 3 ) Add the following line to config.xml in the plugins section;<br />
 <plugin name="WizUniqueIdentifier" value="WizUniqueIdentifier" />
 
-4 ) Add \<script\> tag to your index.html<br />
-- \<script type="text/javascript" charset="utf-8"
-  src="phonegap/plugin/wizUniqueIdentifier/wizUniqueIdentifier.js"\>\</script\><br />
+4 ) Add ```<script>``` tag to your index.html
+
+```<script type="text/javascript" charset="utf-8" src="phonegap/plugin/wizUniqueIdentifier/wizUniqueIdentifier.js"></script>```
 
 5 ) Follow example code below.
 
-# EXAMPLE CODE : #
+# Install (Android)
 
-Retrieving a unique identifier<br />
-<pre><code>
-window.wizUniqueIdentifier.get(Function success));
+Project tree  
 
-* Retrieves a unique identifier.  The unique identifier is generated the first
-* time this method is called.  The unique identifier is stored in the device
-* persistently and preserved across device restarts and app re-installs.
-* Resetting the device content and settings willl reset the value, however
-* restoring the device from a backup will restore any previously stored values.
+	project
+    	/ assets
+        	/ www
+            	/ phonegap
+                	/ plugin
+                   		/ wizUniqueIdentifier
+                       		/ wizUniqueIdentifier.js 
 
-</code></pre>
+    / src
+        / jp 
+            / wizcorp 
+                / phonegap 
+                    / plugins
+                        / wizUniqueIdentifier
+                            / WizUniqueIdentifier.java
+
+1 ) Arrange files to structure seen above.
+
+
+2 ) Add the following line to config.xml in the plugins section;
+
+```<plugin name="WizUniqueIdentifier" value="jp.wizcorp.phonegap.plugin.wizUniqueIdentifier.WizUniqueIdentifier" />```
+
+3 ) Add ```<script>``` tag to your index.html
+
+```<script type="text/javascript" charset="utf-8" src="phonegap/plugin/wizUniqueIdentifier/wizUniqueIdentifier.js"></script>```
+
+4 ) Follow example code below.
+
+
+# Example Code
+
+Retrieving a unique identifier
+
+		window.wizUniqueIdentifier.get(Function success));
+
+* Returns a String on a 128bit unique identifier.
 
