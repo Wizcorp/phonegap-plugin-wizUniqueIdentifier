@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="jp.wizcorp.phonegap.plugin.wizUniqueIdentifier"
+    version="1.0.0">
+
+    <name>Wizard Unique Identifier Plugin</name>
+    
+    <description>This plugin allows you to create a semi-reliable unique identifier.</description>
+    
+    <author>Ally Ogilvie - aogilvie@wizcorp.jp</author>
+    
+    <keywords>wizcorp, wizard, unique, identifier</keywords>
+	
+	<engines>
+	    <engine name="cordova" version=">=3.3.0" />
+	</engines>
+
+    <license>MIT</license>
+
+    <js-module src="www/phonegap/plugin/wizUniqueIdentifier/wizUniqueIdentifier.js" name="wizUniqueIdentifier" target="phonegap/plugin/wizUniqueIdentifier/wizUniqueIdentifier.js">
+        <clobbers target="window.wizUniqueIdentifier" />
+    </js-module>
+    
+    <!-- ios -->
+    <platform name="ios">
+
+        <config-file target="config.xml" parent="/*">
+		    <feature name="WizUniqueIdentifier">
+		        <param name="ios-package" value="WizUniqueIdentifier" />
+		        <param name="onload" value="true" />
+		    </feature>
+        </config-file>
+               
+        <!-- Plugin files -->
+        <header-file src="platforms/ios/HelloCordova/Plugins/WizUniqueIdentifier/WizUniqueIdentifier.h" />
+        <source-file src="platforms/ios/HelloCordova/Plugins/WizUniqueIdentifier/WizUniqueIdentifier.m" compiler-flags="-fno-objc-arc" />
+        <header-file src="platforms/ios/HelloCordova/Plugins/WizUniqueIdentifier/KeychainItemWrapper.h" />
+        <source-file src="platforms/ios/HelloCordova/Plugins/WizUniqueIdentifier/KeychainItemWrapper.m" compiler-flags="-fno-objc-arc" />
+        
+        <framework src="Security.framework" />
+                	
+    </platform>
+    
+    <!-- android -->
+    <platform name="android">
+    
+		<config-file target="res/xml/config.xml" parent="/*">
+			<feature name="WizUniqueIdentifier" >
+				<param name="android-package" value="jp.wizcorp.phonegap.plugin.wizUniqueIdentifier.WizUniqueIdentifier"/>
+			</feature>
+	    </config-file>
+	
+	    <source-file src="android/src/jp/wizcorp/phonegap/plugin/wizUniqueIdentifier/WizUniqueIdentifier.java" 
+	            target-dir="src/jp/wizcorp/phonegap/plugin/wizUniqueIdentifier"/>
+
+    </platform>
+
+</plugin>

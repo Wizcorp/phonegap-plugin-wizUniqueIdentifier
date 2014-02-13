@@ -16,4 +16,3 @@ var wizUniqueIdentifier = {
     }
 };
 
-module.exports = wizUniqueIdentifier;

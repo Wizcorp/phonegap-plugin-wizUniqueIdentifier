@@ -1,27 +1,22 @@
+# OS X
 .DS_Store
 
 # Xcode
-example/ios/exampleWizUniqueIdentifier.xcodeproj/xcuserdata/*
-example/ios/exampleWizUniqueIdentifier.xcodeproj/project.xcworkspace/*
-example/ios/CordovaLib/CordovaLib.xcodeproj/xcuserdata/*
-example/ios/www/*
-!example/ios/www/cordova-2.7.0.js
-example/ios/CordovaLib/CordovaLib.xcodeproj/xcuserdata/*
-example/ios/www/*
+*.swp
+*~.nib
+build/
+*.pbxuser
+*.perspective
+*.perspectivev3
+xcuserdata
 
-# Jet Brains
+# Android Studio
 .idea/
-.iws
-workspace.xml
-tasks.xml
-
-# Android
-proguard/
-local.properties
-gen/
 bin/
-.classpath
-.project
+gen/
+*.iml
+*.iws
 out/
-
-
+local.properties
+log
+proguard/
