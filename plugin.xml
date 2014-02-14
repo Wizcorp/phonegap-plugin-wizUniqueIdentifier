@@ -51,7 +51,7 @@
 			</feature>
 	    </config-file>
 	
-	    <source-file src="android/src/jp/wizcorp/phonegap/plugin/wizUniqueIdentifier/WizUniqueIdentifier.java" 
+	    <source-file src="platforms/android/src/jp/wizcorp/phonegap/plugin/wizUniqueIdentifier/WizUniqueIdentifier.java" 
 	            target-dir="src/jp/wizcorp/phonegap/plugin/wizUniqueIdentifier"/>
 
     </platform>
