@@ -1,4 +1,3 @@
-
 # phonegap-plugin-wizUniqueIdentifier 
 
 phonegap version : 3.0  
@@ -33,5 +32,5 @@ Retrieving a unique identifier
 
 		window.wizUniqueIdentifier.get(Function success));
 
-* Returns a String on a 128bit unique identifier.
+* Returns a 128bit String unique identifier.
 
